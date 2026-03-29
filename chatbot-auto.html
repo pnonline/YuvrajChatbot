@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Candidate Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="demo-container">
+        <h1>Election Candidate Information Chatbot</h1>
+        <p>Chat window will open automatically...</p>
+    </div>
+
+    <!-- Chatbot Container - This is what you'll integrate into your website -->
+    <div id="chatbot-container">
+        <div id="chatbot-toggle" class="chatbot-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </div>
+
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                <div class="header-content">
+                    <div class="candidate-avatar">
+                        <span>YG</span>
+                    </div>
+                    <div class="header-text">
+                        <h3>Yuvraj Gokul</h3>
+                        <p>Election Candidate Assistant</p>
+                    </div>
+                </div>
+                <button id="chatbot-close" class="close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Namaste! 🙏 I'm here to help you learn about Yuvraj Gokul, candidate for the upcoming Assembly elections.</p>
+                        <p>You can ask me :</p>
+                        <ul>
+                            <li>About Yuvraj</li>
+                            <li>Key Promises</li>
+                            <li>Contact Info</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-questions">
+                <button class="quick-btn" data-question="Tell me about the candidate">About Yuvraj</button>
+                <button class="quick-btn" data-question="What are the key promises?">Key Promises</button>
+                <button class="quick-btn" data-question="How can I contact?">Contact Info</button>
+            </div>
+
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
+                <button id="send-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+    <script>
+        // Auto-open chatbot after page loads
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('chatbot-toggle').click();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
