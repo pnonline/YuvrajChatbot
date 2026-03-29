@@ -400,7 +400,7 @@ class ElectionChatbot {
 
                 <p>${candidateInfo.profile.education}</p>
 
-                <p>Rajesh Kumar has a strong academic background from India's premier institutions, which has equipped him with analytical and leadership skills.</p>
+                <p>Yuvraj Gokul has a strong grass root level interactions with public, which has equipped him with analytical and leadership skills.</p>
 
             `;
 
@@ -422,7 +422,7 @@ class ElectionChatbot {
 
                 </ul>
 
-                <p>With ${candidateInfo.profile.experience}, Rajesh has proven his commitment to public service.</p>
+                <p>With ${candidateInfo.profile.experience}, Yuvraj Gokul has proven his commitment to public service.</p>
 
             `;
 
