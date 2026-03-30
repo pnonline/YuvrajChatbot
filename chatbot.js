@@ -14,9 +14,9 @@ const candidateInfo = {
 
     profile: {
 
-        age: 36,
+        age: 37,
 
-        education: "Bachelor of Arts, Kerala university",
+        education: "BTech, Cusat",
 
         profession: "Social Entrepreneur, BJP intellectual cell state co convenor and National Prize winning director",
 
@@ -110,7 +110,7 @@ const candidateInfo = {
 
     contact: {
 
-        phone: "+91 XXXXXXXX ",
+        phone: "+91 9037424146",
 
         email: "yuvrajgokul@gmail.com",
 
